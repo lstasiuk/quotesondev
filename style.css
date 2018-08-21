@@ -221,6 +221,30 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-MediumItalic.woff2") format("woff2"), url("../../fonts/Exo-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-Medium.woff2") format("woff2"), url("../../fonts/Exo-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-Light.woff2") format("woff2"), url("../../fonts/Exo-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-LightItalic.woff2") format("woff2"), url("../../fonts/Exo-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -229,7 +253,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: white;
   font-family: sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
@@ -292,7 +316,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: black;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -589,3 +613,41 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+body {
+  background-color: #222222;
+  font-family: "Exo Web", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  margin-left: 20px; }
+
+.logo img {
+  padding-top: 50px;
+  height: auto;
+  width: 300px; }
+
+.footer-navigation {
+  margin-top: 20px;
+  font-family: "Exo", sans-serif;
+  font-weight: 300; }
+  .footer-navigation p {
+    margin-top: 120px;
+    text-decoration: none; }
+  .footer-navigation a {
+    color: #00cc00;
+    text-decoration: none; }
+  .footer-navigation li {
+    list-style: none;
+    color: #00cc00;
+    display: inline-block;
+    border-right: 1px solid #FFF; }
+  .footer-navigation ul {
+    padding: 0;
+    margin: 0; }
+
+.content-area {
+  font-family: "Exo", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #222222; }
