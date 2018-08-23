@@ -10,12 +10,18 @@
                             padding-top: 50px;
                             height: auto;
                             width: 300px;
+                            margin: 0 auto;
                             @media screen and (min-width: 620px) {
-                                flex: inline;
                                 width: 400px;
                             }
                             @media screen and (min-width: 1080px) {
                                 width: 700px;
-                                text-align: center;
+                            }
+                        }
+                        
+                        .logo {
+                            @media screen and (min-width: 1080px) {
+                                width: 700px;
+                                margin: 0 auto;
                             }
                         }

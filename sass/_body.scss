@@ -1,62 +1,120 @@
-    .content-area {
-        font-family: "Exo", sans-serif;
-        font-size: 20px;
-        line-height: 1.5;
-        color: #ffffff;
-        background-color: #222222;
-        font-weight: 300;
-        @media screen and (min-width: 620px) {
-            font-size: 30px;
+        #page {
+            @media screen and (min-width: 1020px) {
+                max-width: 1000px;
+                margin: 0 auto;
+            }
         }
-        @media screen and (min-width: 1020px) {
-            font-size: 40px;
-            text-align: center;
+        
+        .content-area {
+            font-family: "Exo", sans-serif;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #ffffff;
+            background-color: #222222;
+            font-weight: 300;
+            @media screen and (min-width: 620px) {
+                font-size: 30px;
+            }
+            @media screen and (min-width: 1020px) {
+                font-size: 40px;
+                text-align: left;
+                margin: 0 auto;
+                margin: 0 auto;
+                max-width: 1080px;
+                padding: 2.5%;
+            }
         }
-    }
-    
-    #page {
-        padding: 0.75rem;
-    }
-    
-    .entry-title {
-        font-family: "Exo", sans-serif;
-        font-size: 20px;
-        line-height: 1.5;
-        color: #ffffff;
-        font-weight: 300;
-        display: inline;
-    }
-    
-    .source {
-        @media screen and (min-width: 620px) {
-            font-size: 12px;
+        
+        .site-content {
+            margin: 4rem 10rem;
+            position: relative;
         }
-        a {
-            font-size: 12px;
+        
+        #page {
+            padding: 0.75rem;
         }
-    }
-    
-    #new-quote-button {
-        background-color: #222222;
-        border: 2px solid #00cc00;
-        color: #00cc00;
-        font-size: 1rem;
-        font-weight: 700;
-        line-height: 1;
-        padding: .75rem 2.25rem;
-        box-shadow: none;
-        text-shadow: none;
-        margin-top: 30px;
-        &:hover {
+        
+        .entry-title {
+            font-family: "Exo", sans-serif;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #ffffff;
+            font-weight: 300;
+            display: inline;
+        }
+        
+        .source {
+            font-size: 20px;
+            @media screen and (min-width: 620px) {
+                font-size: 20px;
+                font-style: italic;
+            }
+            @media screen and (min-width: 1020px) {
+                font-size: 20px;
+            }
+        }
+        
+        .source a {
+            font-size: 18px;
+            @media screen and (min-width: 620px) {
+                font-size: 18px;
+            }
+            @media screen and (min-width: 1020px) {
+                font-size: 24px;
+            }
+        }
+        
+        #new-quote-button {
+            background-color: #222222;
+            border: 2px solid #00cc00;
+            color: #00cc00;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1;
+            padding: .75rem 2.25rem;
             box-shadow: none;
             text-shadow: none;
-            color: forestgreen;
-            border: 2px solid forestgreen;
+            margin-top: 30px;
+            &:hover {
+                box-shadow: none;
+                text-shadow: none;
+                color: forestgreen;
+                border: 2px solid forestgreen;
+            }
         }
-    }
-    
-    .entry-meta {
-        a {
-            color: #00cc00;
+        
+        .entry-meta {
+            a {
+                color: #00cc00;
+            }
         }
-    }
+        
+        .entry-content {
+            @media screen and (min-width: 1020px) {}
+        }
+        
+        .site-content::before {
+            @media screen and (min-width: 1020px) {
+                font-family: FontAwesome;
+                content: "\f10d";
+                color: #00cc00;
+                font-size: 125px;
+                line-height: 125px;
+                position: absolute;
+                top: 61px;
+                left: -173px;
+            }
+        }
+        
+        .site-content::after {
+            @media screen and (min-width: 1020px) {
+                font-family: FontAwesome;
+                content: "\f10e";
+                color: #00cc00;
+                font-size: 125px;
+                line-height: 125px;
+                position: absolute;
+                top: 65px;
+                left: 698px;
+            }
+        }

@@ -15,13 +15,14 @@
 
             var quote = data.shift();
 
-
+            $('.entry-content').html(quote.content.rendered);
+            $('.entry-title').html("&mdash; " + quote.title.rendered);
 
             if (quote._qod_quote_source_url.length) {
 
 
-                $('.entry-content').html(quote.content.rendered);
-                $('.entry-title').html(quote.title.rendered +
+
+                $('.entry-meta .source').html(
                     '<a href="' + quote._qod_quote_source_url + '">' + quote._qod_quote_source
 
                     +
@@ -29,12 +30,8 @@
 
                 )
             } else {
-                $('.entry-content').html(quote.content.rendered);
-                $('.entry-title').html(quote.title.rendered + quote._qod_quote_source
+                $('.entry-meta .source').html(quote._qod_quote_source)
 
-
-
-                )
             };
         });
     });
