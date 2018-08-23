@@ -1,6 +1,9 @@
 (function($) {
     'use strict';
-
+    var lastPage = '';
+    $(window).on('popstate', function() {
+        window.location.replace(lastPage);
+    });
     /**
      * Ajax-based random post fetching & History API
      */
@@ -14,6 +17,8 @@
         }).done(function(data) {
 
             var quote = data.shift();
+            lastPage = document.URL;​
+            history.pushState(null, null, qod_vars.home_url + '/' + quote.slug);
 
             $('.entry-content').html(quote.content.rendered);
             $('.entry-title').html("&mdash; " + quote.title.rendered);
@@ -36,9 +41,31 @@
         });
     });
 
+    $('.submit-button').on('click', function() {
+        event.preventDefault();
 
-    /**
-     * Ajax-based front-end post submissions.
-     */
+
+        $.ajax({
+            method: 'post',
+            url: qod_vars.rest_url +
+                'wp/v2/posts',
+            data: {
+                title: $("#quote-author").val(),
+                content: $("#quote-content").val(),
+                _qod_quote_source: $("#quote-source").val(),
+                _qod_quote_source_url: $("#quote-source-url").val(),
+            },
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader('X-WP-Nonce', qod_vars.wpapi_nonce);
+            }
+        }).done(function() {
+            $('.quote-submission-wrapper').slideUp();
+            $('.entry-title').append('<p> Thanks for the Quote !! </p>');
+        }).fail(function() {
+            alert('Oops, something went terribly wrong !!');
+        });
+
+    });
+
 
 })(jQuery)

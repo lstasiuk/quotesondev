@@ -58,26 +58,22 @@ function qod_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 }
 add_filter( 'stylesheet_uri', 'qod_minified_css', 10, 2 );
 
-/**
- * Enqueue scripts and styles.
- */
 function qod_scripts() {
-			$script_url = get_template_directory_uri() . '/build/js/api.min.js';
-		wp_enqueue_script( 'jquery' );
-		wp_enqueue_script( 'qod_api', $script_url, array( 'jquery' ), false, true );
-	 wp_localize_script( 'qod_api', 'qod_vars', array(
-			 'rest_url' => esc_url_raw( rest_url() ),
-			 'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
-			) );
+	wp_enqueue_script( 'jquery' );
 
 	wp_enqueue_style( 'qod-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'font-awesome-cdn', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), '4.4.0' );
 
-	wp_enqueue_script( 'qod-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'qod-api', get_template_directory_uri() . '/build/js/api.min.js', array('jquery'), '20130115', true );
 
-	/**
-	 * @TODO add localize script rest api JavaScript
-	 */
+		// localized js
+		wp_localize_script( 'qod-api', 'qod_vars', array(
+			'rest_url'      => esc_url_raw( rest_url() ),
+			'home_url'      => esc_url_raw( home_url() ),
+			'wpapi_nonce'   => wp_create_nonce( 'wp_rest' ),
+			'success'       => 'Your submissin has been recieved.',
+			'failure'			  => 'Oops, your submission was not recieved.'
+		) );
 }
 add_action( 'wp_enqueue_scripts', 'qod_scripts' );
 
