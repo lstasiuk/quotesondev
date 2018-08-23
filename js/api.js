@@ -1,16 +1,47 @@
 (function($) {
-  'use strict';
+    'use strict';
 
-  // remove this body append code, just for initial test
-  $('body').append('js file is working');
+    /**
+     * Ajax-based random post fetching & History API
+     */
+    $('#new-quote-button').on('click', function(event) {
+        event.preventDefault();
+        $.ajax({
+            method: 'get',
+            url: qod_vars.rest_url + 'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1'
 
-  /**
-   * Ajax-based random post fetching & History API
-   */
+
+        }).done(function(data) {
+
+            var quote = data.shift();
 
 
-  /**
-   * Ajax-based front-end post submissions.
-   */
 
-})(jQuery);
+            if (quote._qod_quote_source_url.length) {
+
+
+                $('.entry-content').html(quote.content.rendered);
+                $('.entry-title').html(quote.title.rendered +
+                    '<a href="' + quote._qod_quote_source_url + '">' + quote._qod_quote_source
+
+                    +
+                    '</a>'
+
+                )
+            } else {
+                $('.entry-content').html(quote.content.rendered);
+                $('.entry-title').html(quote.title.rendered + quote._qod_quote_source
+
+
+
+                )
+            };
+        });
+    });
+
+
+    /**
+     * Ajax-based front-end post submissions.
+     */
+
+})(jQuery)
