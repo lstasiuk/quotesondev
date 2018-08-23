@@ -626,13 +626,19 @@ body {
   width: 300px; }
   @media screen and (min-width: 620px) {
     .logo img {
-      width: 500px; } }
+      -webkit-box-flex: inline;
+          -ms-flex: inline;
+              flex: inline;
+      width: 400px; } }
   @media screen and (min-width: 1080px) {
     .logo img {
       width: 700px;
       text-align: center; } }
 
 .footer-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 20px;
   font-family: "Exo", sans-serif;
   font-weight: 300; }
@@ -659,9 +665,11 @@ li {
 
 li last-child {
   border-right: none; }
-  @media screen and (min-width: 620px) {
-    li last-child {
-      border-right: 1px solid #FFF; } }
+
+p {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%; }
 
 .content-area {
   font-family: "Exo", sans-serif;
@@ -688,6 +696,13 @@ li last-child {
   color: #ffffff;
   font-weight: 300;
   display: inline; }
+
+@media screen and (min-width: 620px) {
+  .source {
+    font-size: 12px; } }
+
+.source a {
+  font-size: 12px; }
 
 #new-quote-button {
   background-color: #222222;

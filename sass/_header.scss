@@ -1,20 +1,21 @@
-    body {
-        background-color: #222222;
-        font-family: "Exo Web", sans-serif;
-        font-size: 1rem;
-        line-height: 1.5;
-        color: white;
-    }
-    
-    .logo img {
-        padding-top: 50px;
-        height: auto;
-        width: 300px;
-        @media screen and (min-width: 620px) {
-            width: 400px;
-        }
-        @media screen and (min-width: 1080px) {
-            width: 700px;
-            flex: text-align: center;
-        }
-    }
+                        body {
+                            background-color: #222222;
+                            font-family: "Exo Web", sans-serif;
+                            font-size: 1rem;
+                            line-height: 1.5;
+                            color: white;
+                        }
+                        
+                        .logo img {
+                            padding-top: 50px;
+                            height: auto;
+                            width: 300px;
+                            @media screen and (min-width: 620px) {
+                                flex: inline;
+                                width: 400px;
+                            }
+                            @media screen and (min-width: 1080px) {
+                                width: 700px;
+                                text-align: center;
+                            }
+                        }
