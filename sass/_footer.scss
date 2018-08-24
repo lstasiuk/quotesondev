@@ -1,41 +1,51 @@
-.footer-navigation {
-    display: flex;
-    margin-top: 20px;
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    p {
-        margin-top: 10px;
-        text-decoration: none;
-    }
-    a {
-        color: #00cc00;
-        text-decoration: none;
-    }
-    ul {
-        margin: 0;
-        margin-top: 100px;
-        padding: 0;
-    }
-}
-
->li:last-child {
-    border: none;
-}
-
-li {
-    list-style: none;
-    color: #00cc00;
-    display: inline-block;
-    padding: 5px;
-    border-right: 1px solid #FFF;
-}
-
-li last-child {
-    border-right: none;
-    // @media screen and (min-width: 1020px) {
-    //     border-right: 1px solid #FFF;
-}
-
-p {
-    flex: 0 1 100%;
-}
+                .footer-navigation {
+                    display: flex;
+                    margin-top: 20px;
+                    font-family: "Exo", sans-serif;
+                    font-weight: 300;
+                    p {
+                        margin-top: 10px;
+                        text-decoration: none;
+                    }
+                    a {
+                        color: #00cc00;
+                        text-decoration: none;
+                    }
+                    ul {
+                        margin: 0;
+                        margin-top: 100px;
+                        padding: 0;
+                    }
+                }
+                
+                .footer-navigation li {
+                    padding: 0 1rem;
+                    border-right: 1px solid white;
+                    line-height: 1rem;
+                    font-weight: lighter;
+                }
+                
+                .footer-navigation li:first-child {
+                    padding-left: 0;
+                }
+                
+                >li:last-child {
+                    border: none;
+                    border: none;
+                    @media screen and (min-width: 620px) {
+                        border-right: 1px solid white;
+                    }
+                    @media screen and (min-width: 1020px) {
+                        border-right: 1px solid white;
+                    }
+                    li {
+                        list-style: none;
+                        color: #00cc00;
+                        display: inline-block;
+                        padding: 5px;
+                        border-right: 1px solid #FFF;
+                    }
+                    p {
+                        flex: 0 1 100%;
+                    }
+                }
