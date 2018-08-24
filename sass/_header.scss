@@ -12,16 +12,12 @@
                             width: 300px;
                             margin: 0 auto;
                             @media screen and (min-width: 620px) {
-                                width: 400px;
+                                width: 500px;
                             }
                             @media screen and (min-width: 1080px) {
                                 width: 700px;
-                            }
-                        }
-                        
-                        .logo {
-                            @media screen and (min-width: 1080px) {
-                                width: 700px;
-                                margin: 0 auto;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                             }
                         }
