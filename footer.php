@@ -17,7 +17,7 @@
 					 	array( 
 						 	'theme_location' => 'primary', 
 							 'menu_id' => 'primary-menu',
-							 'menu_class' => 'footer-navigation'
+							 'menu_class' => 'footer-inner'
 						 	) 
 						); 
 					?>

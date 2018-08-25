@@ -1,0 +1,71 @@
+#page {
+    padding: 0.75rem;
+    @media screen and (min-width: 1020px) {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+.entry-header {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.browse-archives {
+    font-family: "Exo", Arial;
+    font-size: 24px;
+}
+
+.post-archives h2 {
+    font-size: 24px;
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+.post-archives ul li,
+.category-archives ul li,
+.tag-archives ul li {
+    float: left;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    margin-right: 1.125rem;
+    font-family: "Exo", Arial;
+    font-style: normal;
+}
+
+.post-archives ul {
+    list-style: none;
+    color: #00cc00;
+    font-size: 30px;
+    padding: 0;
+    margin-left: 0;
+    a {
+        text-decoration: none;
+        color: #00cc00;
+    }
+}
+
+.category-archives ul {
+    list-style: none;
+    color: #00cc00;
+    font-size: 16px;
+    padding: 0;
+    margin-left: 0;
+    a {
+        text-decoration: none;
+        color: #00cc00;
+    }
+}
+
+.tag-archives ul {
+    list-style: none;
+    color: #00cc00;
+    font-size: 16px;
+    padding: 0;
+    margin-left: 0;
+    a {
+        text-decoration: none;
+        color: #00cc00;
+    }
+}

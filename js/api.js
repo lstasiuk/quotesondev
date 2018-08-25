@@ -30,7 +30,7 @@
             } else {
                 $('.entry-meta .source').html(quote._qod_quote_source)
 
-            };
+            }
         });
     });
 

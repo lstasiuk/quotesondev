@@ -6,26 +6,6 @@
     }
 }
 
-.content-area {
-    font-family: "Exo", sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-    color: #ffffff;
-    background-color: #222222;
-    font-weight: 300;
-    @media screen and (min-width: 620px) {
-        font-size: 30px;
-    }
-    @media screen and (min-width: 1020px) {
-        font-size: 40px;
-        text-align: left;
-        margin: 0 auto;
-        margin: 0 auto;
-        max-width: 1080px;
-        padding: 2.5%;
-    }
-}
-
 .site-content {
     @media screen and (min-width: 1020px) {
         margin: 4rem 10rem;
@@ -33,7 +13,7 @@
     }
 }
 
-.entry-title {
+.entry-title p {
     font-family: "Exo", sans-serif;
     font-size: 20px;
     line-height: 1.5;
@@ -44,11 +24,12 @@
 
 .entry-header h1 {
     font-family: "Exo", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.5;
     color: #ffffff;
-    font-weight: 300;
-    display: inline;
+    font-weight: bold;
+    font-weight: 700;
+    margin: 0 auto;
 }
 
 .source {
@@ -72,14 +53,19 @@
     }
 }
 
-// .entry-header h1 {
-//     padding-top: 100px;
-//     font-size: 30px;
-//     font-weight: bold;
-// }
-// .entry-content p {
-//     font-size: 16px;
-// }
-// .entry-content a {
-//     color: #00cc00;
-// }
+.entry-content {
+    a {
+        color: #00cc00;
+    }
+    p {
+        font-size: 1rem;
+    }
+    @media screen and (min-width: 1020px) {
+        font-size: 40px;
+        text-align: left;
+        margin: 0 auto;
+        margin: 0 auto;
+        max-width: 1080px;
+        padding: 2.5%;
+    }
+}

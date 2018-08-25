@@ -7,6 +7,10 @@
 
 get_header(); ?>
 
+<div class="container site-content">
+  <article class="main-content">
+	
+
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 

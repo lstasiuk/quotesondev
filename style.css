@@ -613,6 +613,15 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+.quote-submission-wrapper {
+  font-size: 20px; }
+
+.error-404 .page-header h1 {
+  font-size: 20px;
+  margin: .67em 0; }
+  .error-404 .page-header h1 p {
+    font-size: 16px; }
+
 body {
   background-color: #222222;
   font-family: "Exo Web", sans-serif;
@@ -642,51 +651,31 @@ body {
               align-items: center; } }
 
 .footer-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 20px;
-  font-family: "Exo", sans-serif;
-  font-weight: 300; }
+  margin: 60px 0;
+  line-height: 2.5; }
   .footer-navigation p {
-    margin-top: 10px;
-    text-decoration: none; }
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Exo", Helvetica; }
   .footer-navigation a {
     color: #00cc00;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: "Exo", Helvetica; }
+    .footer-navigation a:hover {
+      color: #00cc00; }
   .footer-navigation ul {
-    margin: 0;
-    margin-top: 100px;
-    padding: 0; }
-
-.footer-navigation li {
-  padding: 0 1rem;
-  border-right: 1px solid white;
-  line-height: 1rem;
-  font-weight: lighter; }
-
-.footer-navigation li:first-child {
-  padding-left: 0; }
-
-> li:last-child {
-  border: none;
-  border: none; }
-  @media screen and (min-width: 620px) {
-    > li:last-child {
-      border-right: 1px solid white; } }
-  @media screen and (min-width: 1020px) {
-    > li:last-child {
-      border-right: 1px solid white; } }
-  > li:last-child li {
     list-style: none;
-    color: #00cc00;
+    margin-bottom: -20px;
+    margin-left: 40px; }
+  .footer-navigation li {
     display: inline-block;
-    padding: 5px;
-    border-right: 1px solid #FFF; }
-  > li:last-child p {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto; }
 
 #page {
   padding: 0.75rem; }
@@ -695,18 +684,17 @@ body {
       max-width: 1000px;
       margin: 0 auto; } }
 
-.content-area {
+.content-area p {
   font-family: "Exo", sans-serif;
-  font-size: 20px;
   line-height: 1.5;
   color: #ffffff;
   background-color: #222222;
   font-weight: 300; }
   @media screen and (min-width: 620px) {
-    .content-area {
+    .content-area p {
       font-size: 30px; } }
   @media screen and (min-width: 1020px) {
-    .content-area {
+    .content-area p {
       font-size: 40px;
       text-align: left;
       margin: 0 auto;
@@ -777,7 +765,7 @@ body {
   color: #00cc00; }
 
 @media screen and (min-width: 1020px) {
-  .site-content::before {
+  .site-main::before {
     font-family: FontAwesome;
     content: "\f10d";
     color: #00cc00;
@@ -788,7 +776,7 @@ body {
     left: -173px; } }
 
 @media screen and (min-width: 1020px) {
-  .site-content::after {
+  .site-main::after {
     font-family: FontAwesome;
     content: "\f10e";
     color: #00cc00;
@@ -805,31 +793,12 @@ body {
       max-width: 1000px;
       margin: 0 auto; } }
 
-.content-area {
-  font-family: "Exo", sans-serif;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #ffffff;
-  background-color: #222222;
-  font-weight: 300; }
-  @media screen and (min-width: 620px) {
-    .content-area {
-      font-size: 30px; } }
-  @media screen and (min-width: 1020px) {
-    .content-area {
-      font-size: 40px;
-      text-align: left;
-      margin: 0 auto;
-      margin: 0 auto;
-      max-width: 1080px;
-      padding: 2.5%; } }
-
 @media screen and (min-width: 1020px) {
   .site-content {
     margin: 4rem 10rem;
     position: relative; } }
 
-.entry-title {
+.entry-title p {
   font-family: "Exo", sans-serif;
   font-size: 20px;
   line-height: 1.5;
@@ -839,11 +808,12 @@ body {
 
 .entry-header h1 {
   font-family: "Exo", sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.5;
   color: #ffffff;
-  font-weight: 300;
-  display: inline; }
+  font-weight: bold;
+  font-weight: 700;
+  margin: 0 auto; }
 
 .source {
   font-size: 20px; }
@@ -864,7 +834,78 @@ body {
     .source a {
       font-size: 24px; } }
 
-.entry-header h1 {
-  margin-bottom: 60px;
-  font-size: 20px;
-  margin: .67em 0; }
+.entry-content a {
+  color: #00cc00; }
+
+.entry-content p {
+  font-size: 1rem; }
+
+@media screen and (min-width: 1020px) {
+  .entry-content {
+    font-size: 40px;
+    text-align: left;
+    margin: 0 auto;
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 2.5%; } }
+
+#page {
+  padding: 0.75rem; }
+  @media screen and (min-width: 1020px) {
+    #page {
+      max-width: 1000px;
+      margin: 0 auto; } }
+
+.entry-header {
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 300; }
+
+.browse-archives {
+  font-family: "Exo", Arial;
+  font-size: 24px; }
+
+.post-archives h2 {
+  font-size: 24px;
+  margin-top: 50px;
+  font-weight: 500; }
+
+.post-archives ul li,
+.category-archives ul li,
+.tag-archives ul li {
+  float: left;
+  font-size: 1rem;
+  margin-bottom: .5rem;
+  margin-right: 1.125rem;
+  font-family: "Exo", Arial;
+  font-style: normal; }
+
+.post-archives ul {
+  list-style: none;
+  color: #00cc00;
+  font-size: 30px;
+  padding: 0;
+  margin-left: 0; }
+  .post-archives ul a {
+    text-decoration: none;
+    color: #00cc00; }
+
+.category-archives ul {
+  list-style: none;
+  color: #00cc00;
+  font-size: 16px;
+  padding: 0;
+  margin-left: 0; }
+  .category-archives ul a {
+    text-decoration: none;
+    color: #00cc00; }
+
+.tag-archives ul {
+  list-style: none;
+  color: #00cc00;
+  font-size: 16px;
+  padding: 0;
+  margin-left: 0; }
+  .tag-archives ul a {
+    text-decoration: none;
+    color: #00cc00; }
