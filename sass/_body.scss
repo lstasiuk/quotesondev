@@ -1,133 +1,133 @@
-                                                    .container {
-                                                max-width: 1080px;
-                                                margin: 0 auto;
-                                            }
-                                            
-                                            #page {
-                                                padding: 0.75rem;
-                                                @media screen and (min-width: 1020px) {
-                                                    max-width: 1000px;
-                                                    margin: 0 auto;
-                                                }
-                                            }
-                                            
-                                            .site-main {
-                                                p {
-                                                    font-family: "Exo", sans-serif;
-                                                    line-height: 1.5;
-                                                    color: #ffffff;
-                                                    background-color: #222222;
-                                                    font-weight: 300;
-                                                    @media screen and (min-width: 620px) {
-                                                        font-size: 30px;
-                                                    }
-                                                    @media screen and (min-width: 1020px) {
-                                                        font-size: 40px;
-                                                        text-align: left;
-                                                        margin: 0 auto;
-                                                        margin: 0 auto;
-                                                        max-width: 1080px;
-                                                        padding: 2.5%;
-                                                    }
-                                                }
-                                            }
-                                            
-                                            .site-content {
-                                                @media screen and (min-width: 1020px) {
-                                                    margin: 4rem 10rem;
-                                                    position: relative;
-                                                }
-                                            }
-                                            
-                                            .entry-title {
-                                                font-family: "Exo", sans-serif;
-                                                font-size: 20px;
-                                                line-height: 1.5;
-                                                color: #ffffff;
-                                                font-weight: 300;
-                                                display: inline;
-                                            }
-                                            
-                                            .entry-header h1 {
-                                                font-family: "Exo", sans-serif;
-                                                font-size: 20px;
-                                                line-height: 1.5;
-                                                color: #ffffff;
-                                                font-weight: 300;
-                                                display: inline;
-                                                @media screen and (min-width: 620px) {
-                                                    font-size: 20px;
-                                                }
-                                                @media screen and (min-width: 1020px) {}
-                                                .source {
-                                                    font-size: 20px;
-                                                    font-style: italic;
-                                                    @media screen and (min-width: 620px) {
-                                                        font-size: 20px;
-                                                        font-style: italic;
-                                                    }
-                                                    @media screen and (min-width: 1020px) {
-                                                        font-size: 20px;
-                                                        font-style: italic;
-                                                    }
-                                                    .source a {
-                                                        color: #00cc00;
-                                                        font-family: "Exo", Arial;
-                                                        font-size: 20px;
-                                                        font-style: italic;
-                                                        @media screen and (min-width: 620px) {
-                                                            font-size: 20px;
-                                                            font-style: italic;
-                                                        }
-                                                        @media screen and (min-width: 1020px) {
-                                                            font-size: 20px;
-                                                            font-style: italic;
-                                                        }
-                                                    }
-                                                    #new-quote-button {
-                                                        background-color: #222222;
-                                                        border: 2px solid #00cc00;
-                                                        color: #00cc00;
-                                                        font-size: 1rem;
-                                                        font-weight: 700;
-                                                        line-height: 1;
-                                                        padding: .75rem 2.25rem;
-                                                        box-shadow: none;
-                                                        text-shadow: none;
-                                                        margin-top: 30px;
-                                                        &:hover {
-                                                            box-shadow: none;
-                                                            text-shadow: none;
-                                                            color: forestgreen;
-                                                            border: 2px solid forestgreen;
-                                                        }
-                                                    }
-                                                    .entry-meta {
-                                                        a {
-                                                            color: #00cc00;
-                                                        }
-                                                    }
-                                                    .site-main::before {
-                                                        @media screen and (min-width: 1020px) {
-                                                            font-family: FontAwesome;
-                                                            content: "\f10d";
-                                                            color: #00cc00;
-                                                            font-size: 125px;
-                                                            line-height: 125px;
-                                                            position: absolute;
-                                                            top: 61px;
-                                                            left: -173px;
-                                                        }
-                                                    }
-                                                    .site-main::after {
-                                                        @media screen and (min-width: 1020px) {
-                                                            font-family: FontAwesome;
-                                                            content: "\f10e";
-                                                            color: #00cc00;
-                                                            font-size: 125px;
-                                                            line-height: 125px;
-                                                            position: absolute;
-                                                            top: 65px;
-                                                            left: 698px;
-                                                        }
-                                                    }
+                                .container {
+                            max-width: 1080px;
+                            margin: 0 auto
+                        }
+                        
+                        #page {
+                            padding: 0.75rem;
+                            @media screen and (min-width: 1020px) {
+                                max-width: 1000px;
+                                margin: 0 auto;
+                            }
+                        }
+                        
+                        .site-main {
+                            p {
+                                font-family: "Exo", sans-serif;
+                                line-height: 1.5;
+                                color: #ffffff;
+                                background-color: #222222;
+                                font-weight: 300;
+                                @media screen and (min-width: 620px) {
+                                    font-size: 30px;
+                                }
+                                @media screen and (min-width: 1020px) {
+                                    font-size: 40px;
+                                    text-align: left;
+                                    margin: 0 auto;
+                                    margin: 0 auto;
+                                    max-width: 1080px;
+                                    padding: 2.5%;
+                                }
+                            }
+                        }
+                        
+                        .site-content {
+                            @media screen and (min-width: 1020px) {
+                                margin: 4rem 10rem;
+                                position: relative;
+                            }
+                        }
+                        
+                        .entry-title {
+                            font-family: "Exo", sans-serif;
+                            font-size: 20px;
+                            line-height: 1.5;
+                            color: #ffffff;
+                            font-weight: 300;
+                            display: inline;
+                        }
+                        
+                        .entry-header h1 {
+                            font-family: "Exo", sans-serif;
+                            font-size: 20px;
+                            line-height: 1.5;
+                            color: #ffffff;
+                            font-weight: 300;
+                            display: inline;
+                            @media screen and (min-width: 620px) {
+                                font-size: 20px;
+                            }
+                            @media screen and (min-width: 1020px) {}
+                            .source {
+                                font-size: 20px;
+                                font-style: italic;
+                                @media screen and (min-width: 620px) {
+                                    font-size: 20px;
+                                    font-style: italic;
+                                }
+                                @media screen and (min-width: 1020px) {
+                                    font-size: 20px;
+                                    font-style: italic;
+                                }
+                                .source a {
+                                    color: #00cc00;
+                                    font-family: "Exo", Arial;
+                                    font-size: 20px;
+                                    font-style: italic;
+                                    @media screen and (min-width: 620px) {
+                                        font-size: 20px;
+                                        font-style: italic;
+                                    }
+                                    @media screen and (min-width: 1020px) {
+                                        font-size: 20px;
+                                        font-style: italic;
+                                    }
+                                }
+                                #new-quote-button {
+                                    background-color: #222222;
+                                    border: 2px solid #00cc00;
+                                    color: #00cc00;
+                                    font-size: 1rem;
+                                    font-weight: 700;
+                                    line-height: 1;
+                                    padding: .75rem 2.25rem;
+                                    box-shadow: none;
+                                    text-shadow: none;
+                                    margin-top: 30px;
+                                    &:hover {
+                                        box-shadow: none;
+                                        text-shadow: none;
+                                        color: forestgreen;
+                                        border: 2px solid forestgreen;
+                                    }
+                                }
+                                .entry-meta {
+                                    a {
+                                        color: #00cc00;
+                                    }
+                                }
+                                .site-main::before {
+                                    @media screen and (min-width: 1020px) {
+                                        font-family: FontAwesome;
+                                        content: "\f10d";
+                                        color: #00cc00;
+                                        font-size: 125px;
+                                        line-height: 125px;
+                                        position: absolute;
+                                        top: 61px;
+                                        left: -173px;
+                                    }
+                                }
+                                .site-main::after {
+                                    @media screen and (min-width: 1020px) {
+                                        font-family: FontAwesome;
+                                        content: "\f10e";
+                                        color: #00cc00;
+                                        font-size: 125px;
+                                        line-height: 125px;
+                                        position: absolute;
+                                        top: 65px;
+                                        left: 698px;
+                                    }
+                                }

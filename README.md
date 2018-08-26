@@ -1,23 +1,17 @@
-# Quotes on Dev Starter
+Quotes on Dev Starter
 
 A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
 
-## Installation
+Rest API
+Using the wp rest API enables us to access and get/post information to our API, and use that to dynamically update the content on our page. In combination with ajax, we are able to update content without a page reload and create a seamless viewing experience.
 
-### 1. Download me (don't clone me!)
+Description and Objective:
+Use Wordpress as a CMS. Create a webpage using the Wordpress REST API to display quotes and fetch new quotes on button-click without refreshing the page. Allow user to go back to previously displayed quotes. Allow verified users to submit new quotes.
 
-Then add me to your `wp-content/themes` directory.
+Used the following:
 
-### 2. Rename the `quotesondev-starter-master` directory
+Javascript(jQuery), Wordpress, PHP, Gulp and SCSS.
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+Personal Learnings:
 
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
+Learned a lot more about Javascript and Wordpress and feel more comfortable using them.  Found it difficult to work with the already coded in class and div names as they were redundant and this caused problems with the DOM.
